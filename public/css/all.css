@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Bungee");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url("/images/bluewood.png");
+  background-repeat: round;
+  background-color: #fafafa;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+header {
+  background: #ed2939;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+header .header-title {
+  flex: 1;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+header .hamburger {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+div.container {
+  margin: 0 auto;
+  padding: 0 12px;
+  min-height: calc(100vh - 98px);
+  max-width: 900px;
+}
+
+div.upcoming {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #fff;
+  text-shadow: 2px 2px 5px #fff;
+  padding: 25px 0 50px;
+  text-align: right;
+}
+
+ul.upcoming-chord {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.upcoming-chord li + li {
+  margin-top: 18px;
+}
+
+.listSong {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  height: 100%;
+}
+
+.listSong .leftTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  width: 50%;
+}
+
+@media (max-width: 899px) {
+  .listSong .leftTitle {
+    padding: 6px;
+  }
+}
+
+.listSong .initial-key {
+  opacity: 0.8;
+  width: 50%;
+  background: #ed2939;
+  color: #fff;
+  font-family: 'Bungee', Arial, Helvetica, sans-serif;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 6px 6px 0;
+}
+
+@media (max-width: 899px) {
+  .listSong .initial-key {
+    margin-top: -20px;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    padding: 6px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+  }
+}
+
+.listSong .initial-key:before {
+  background: rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  left: 0;
+  bottom: 0;
+  content: '';
+  transform: rotate(28deg);
+  transform-origin: top;
+}
+
+@media (max-width: 899px) {
+  .listSong .initial-key:before {
+    background: rgba(0, 0, 0, 0.16);
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+  }
+}
+
+.listSong .initial-key .flavor-text {
+  text-align: center;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  .listSong .initial-key .flavor-text {
+    padding-top: 10px;
+    z-index: 2;
+    position: relative;
+    font-size: 9px;
+  }
+}
+
+.listSong .initial-key .letter {
+  text-align: center;
+  font-size: 60px;
+  z-index: 2;
+  position: relative;
+}
+
+@media (max-width: 899px) {
+  .listSong .initial-key .letter {
+    font-size: 30px;
+  }
+}
+
+ul.upcoming-chord li a {
+  height: 100%;
+  display: block;
+  background: #fff;
+  padding: 12px 10px;
+  border-radius: 6px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  color: #111;
+  font-size: 14px;
+}
+
+@media (min-width: 900px) {
+  ul.upcoming-chord {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.upcoming-chord li + li {
+    margin-top: 0px;
+  }
+  ul.upcoming-chord li {
+    width: 25%;
+    padding: 10px 8px;
+  }
+  ul.upcoming-chord li a {
+    height: 200px;
+    padding: 0;
+  }
+}
+
+ul.upcoming-chord li .songtitle {
+  text-shadow: 1px 1px 3px #f2f5f7;
+  padding-bottom: 8px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+ul.upcoming-chord li .composer {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+span.badge {
+  color: #fff;
+  background-color: #4cbb17;
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 60%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  margin-left: 2px;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  text-shadow: none;
+}
+
+footer {
+  background: #0080ff;
+  padding: 15px 12px;
+  color: #73c2fb;
+  font-weight: 600;
+  font-size: 11px;
+}
+/*# sourceMappingURL=all.css.map */
