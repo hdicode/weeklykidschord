@@ -128,7 +128,6 @@ ul.upcoming-chord li + li {
     margin-top: -20px;
     margin-right: 10px;
     flex: 0 0 auto;
-    padding: 6px;
     box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
     color: #fff;
     width: 60px;
@@ -189,6 +188,7 @@ ul.upcoming-chord li + li {
 @media (max-width: 899px) {
   .listSong .initial-key .letter {
     font-size: 30px;
+    line-height: 100%;
   }
 }
 

@@ -17,7 +17,7 @@
                     </div>
                     <div class="initial-key">
                         <div class="flavor-text">Initial Key</div>
-                        <div class="letter">G</div>
+                        <div class="letter">E</div>
                     </div>
                 </div>
             </a>
@@ -31,7 +31,7 @@
                     </div>
                     <div class="initial-key">
                         <div class="flavor-text">Initial Key</div>
-                        <div class="letter">G</div>
+                        <div class="letter">C</div>
                     </div>
                 </div>
             </a>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="initial-key">
                         <div class="flavor-text">Initial Key</div>
-                        <div class="letter">G</div>
+                        <div class="letter">A</div>
                     </div>
                 </div>
             </a>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="initial-key">
                         <div class="flavor-text">Initial Key</div>
-                        <div class="letter">G</div>
+                        <div class="letter">B</div>
                     </div>
                 </div>
             </a>
