@@ -7,7 +7,7 @@
     <title>@yield('title') | Webtools Weekly KIDS Chord</title>
     <link rel="stylesheet" href="/css/all.css">
 </head>
-<body>
+<body class="webtools">
     <header>
         <h1 class="header-title">@yield('title')</h1>
     </header>

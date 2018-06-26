@@ -268,19 +268,19 @@ span.badge {
   text-shadow: none;
 }
 
-header {
-  background: #777;
-}
-
-body {
+body.webtools {
   background: #ccc;
 }
 
-.container {
-  background: #fff;
+body.webtools header {
+  background: #777;
 }
 
-footer {
+body.webtools .container {
+  background: #eee;
+}
+
+body.webtools footer {
   background: #fff;
   color: #777;
 }

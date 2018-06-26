@@ -1,16 +1,16 @@
-header {
-  background: #777;
-}
-
-body {
+body.webtools {
   background: #ccc;
 }
 
-.container {
+body.webtools header {
+  background: #777;
+}
+
+body.webtools .container {
   background: #eee;
 }
 
-footer {
+body.webtools footer {
   background: #fff;
   color: #777;
 }
