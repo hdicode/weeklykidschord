@@ -13,7 +13,7 @@ class CreateComposerTable extends Migration
      */
     public function up()
     {
-        Schema::create('composer', function (Blueprint $table) {
+        Schema::create('composers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('composername', 200);
             $table->mediumText('description')->nullable();
@@ -28,6 +28,6 @@ class CreateComposerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('composer');
+        Schema::dropIfExists('composers');
     }
 }

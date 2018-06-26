@@ -15,8 +15,9 @@ class CreateChordsondemandTable extends Migration
     {
         Schema::create('chordsondemand', function (Blueprint $table) {
             $table->increments('id');
-            $table->int('week');
-            $table->int('song');
+            $table->integer('week');
+            $table->integer('song');
+            $table->integer('position');
             $table->timestamps();
         });
     }

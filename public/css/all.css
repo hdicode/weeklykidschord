@@ -18,6 +18,21 @@ body {
   font-weight: 300;
 }
 
+footer {
+  background: #0080ff;
+  color: #73c2fb;
+  font-weight: 600;
+  font-size: 11px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+footer .copy {
+  display: inline-block;
+}
+
 header {
   background: #ed2939;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -28,6 +43,7 @@ header {
   display: flex;
   align-items: center;
   padding: 8px 10px;
+  height: 60px;
 }
 
 header .header-title {
@@ -68,7 +84,7 @@ header .hamburger {
 div.container {
   margin: 0 auto;
   padding: 0 12px;
-  min-height: calc(100vh - 98px);
+  min-height: calc(100vh - 100px);
   max-width: 900px;
 }
 
@@ -252,11 +268,20 @@ span.badge {
   text-shadow: none;
 }
 
+header {
+  background: #777;
+}
+
+body {
+  background: #ccc;
+}
+
+.container {
+  background: #fff;
+}
+
 footer {
-  background: #0080ff;
-  padding: 15px 12px;
-  color: #73c2fb;
-  font-weight: 600;
-  font-size: 11px;
+  background: #fff;
+  color: #777;
 }
 /*# sourceMappingURL=all.css.map */
