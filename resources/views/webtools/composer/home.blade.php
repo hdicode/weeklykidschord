@@ -3,10 +3,8 @@
 @section('title', 'Composers')
 @section('container')
 <div class="container">
-    <ul>
-        @foreach ($composers as $composer)
-            <li>{{ $composer->composername }}</li>
-        @endforeach
-    </ul>
+    @foreach ($composers as $composer)
+        <div><a href="{{$composer->id}}">{{ $composer->composername }}</a></div>
+    @endforeach
 </div>
 @endsection

@@ -11,4 +11,9 @@ class WebtoolsController extends Controller
         $composers = Composer::all();
         return view('webtools/composer/home', ['composers' => $composers]);
     }
+
+    public function show($id) {
+        $composer = Composer::find($id);
+        return view('webtools/composer/single', ['composer' => $composer]);
+    }
 }
