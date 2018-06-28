@@ -3,7 +3,14 @@
 @section('title', 'Composer ' . $composer->id)
 @section('container')
 <div class="container">
-    <div>{{ $composer->composername }}</div>
-    <div>{{ $composer->description }}</div>
+    @foreach( $composer->toArray() as $key => $value )
+        <div class="singleData">
+            <div class="field">{{ $key }}</div>
+            <div class="data">{{ $value }}</div>
+        </div>
+    @endforeach
 </div>
+@endsection
+@section('back_button')
+<a class="backArrow" href="/webtools/composer"><i class="fa fa-arrow-left"></i></a>
 @endsection

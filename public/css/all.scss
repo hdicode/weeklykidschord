@@ -1,4 +1,8 @@
+
+$primary:#ed2939;
+
 @import "include";
+@import "webtools/webtools";
 
 header {
     background: $primary;
@@ -217,6 +221,3 @@ span.badge {
     border-radius: .25rem;
     text-shadow: none;
 }
-
-
-@import "webtools/webtools";

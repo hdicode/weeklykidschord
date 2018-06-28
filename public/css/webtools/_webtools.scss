@@ -1,0 +1,63 @@
+body.webtools {
+    background: #ccc;
+
+    header {
+        background: #777;
+        
+        .containerheader {
+            margin: 0 auto;
+            width: 900px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .backArrow {
+                color: #fff;
+                position: absolute;
+                left: 8px;
+            }
+        }
+    }
+    .container {
+        background: #eee;
+        padding-top:8px;
+            .buttonCreate {
+                background: $primary;
+                color: #fff;
+                padding: 8px 6px;
+                width: 200px;
+                border-left: 4px solid black;
+                display:inline-block;
+
+                i{
+                    padding: 4px;
+                }
+            }
+
+            .homeData {
+                display: flex;
+                .data {
+                    flex:1;
+                    text-align: center;
+                }
+            }
+
+            .singleData {
+                display: flex;
+                + .singleData {
+                    margin-top:16px;
+                }
+                .field {
+                    flex:1;
+                    font-weight: 600;
+                }
+                .data {
+                    flex:2;
+                }
+            }
+    }
+    footer {
+        background: #fff;
+        color: #777;
+    }
+}
