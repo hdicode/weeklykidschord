@@ -82,37 +82,58 @@ body.webtools .container .buttonCreate i {
   padding: 4px;
 }
 
-body.webtools .container .homeData {
+body.webtools .container .listHomeData {
+  padding-top: 20px;
+}
+
+body.webtools .container .listHomeData .homeData {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background: #fff;
+  color: #000;
+  padding: 6px 0;
 }
 
-body.webtools .container .homeData .data {
+body.webtools .container .listHomeData .homeData:nth-child(odd) {
+  background: #aaa;
+  color: #fff;
+}
+
+body.webtools .container .listHomeData .homeData:nth-child(odd) .data {
+  color: #fff;
+}
+
+body.webtools .container .listHomeData .homeData .data {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: center;
+  color: #000;
 }
 
-body.webtools .container .singleData {
+body.webtools .container .listSingleData {
+  padding-top: 20px;
+}
+
+body.webtools .container .listSingleData .singleData {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body.webtools .container .singleData + .singleData {
+body.webtools .container .listSingleData .singleData + .singleData {
   margin-top: 16px;
 }
 
-body.webtools .container .singleData .field {
+body.webtools .container .listSingleData .singleData .field {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   font-weight: 600;
 }
 
-body.webtools .container .singleData .data {
+body.webtools .container .listSingleData .singleData .data {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;

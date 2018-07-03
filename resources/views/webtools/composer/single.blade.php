@@ -3,12 +3,14 @@
 @section('title', 'Composer ' . $composer->id)
 @section('container')
 <div class="container">
+    <div class="listSingleData">
     @foreach( $composer->toArray() as $key => $value )
         <div class="singleData">
             <div class="field">{{ $key }}</div>
             <div class="data">{{ $value }}</div>
         </div>
     @endforeach
+    </div>
 </div>
 @endsection
 @section('back_button')

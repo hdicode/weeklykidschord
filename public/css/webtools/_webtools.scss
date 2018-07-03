@@ -34,27 +34,47 @@ body.webtools {
                 }
             }
 
-            .homeData {
-                display: flex;
-                .data {
-                    flex:1;
-                    text-align: center;
+            .listHomeData {
+                padding-top:20px;
+                .homeData {
+                    display: flex;
+                    background: #fff;
+                    color: #000;
+                    padding: 6px 0;
+
+                    &:nth-child(odd) {
+                        background: #aaa;
+                        color: #fff;
+
+                        .data {
+                            color: #fff;
+                        }
+                    }
+                    .data {
+                        flex:1;
+                        text-align: center;
+                        color: #000;
+                    }
                 }
             }
 
-            .singleData {
-                display: flex;
-                + .singleData {
-                    margin-top:16px;
-                }
-                .field {
-                    flex:1;
-                    font-weight: 600;
-                }
-                .data {
-                    flex:2;
+            .listSingleData {
+                padding-top:20px;
+                .singleData {
+                    display: flex;
+                    + .singleData {
+                        margin-top:16px;
+                    }
+                    .field {
+                        flex:1;
+                        font-weight: 600;
+                    }
+                    .data {
+                        flex:2;
+                    }
                 }
             }
+
     }
     footer {
         background: #fff;
